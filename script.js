@@ -143,6 +143,19 @@ function generatePassword(){
     if (lowercaseChosen){
       passwordArray[j] = lowercaseArray[Math.floor(Math.random() *26)];
     }
+
+    if (!lowercaseChosen){
+      passwordArray[j] = uppercaseArray[Math.floor(Math.random() *26)];
+    }
+
+    if (!lowercaseChosen && !uppercaseChosen){
+      passwordArray[j] = numberArray[Math.floor(Math.random() *10)];
+    }
+
+    if (!lowercaseChosen && !uppercaseChosen && !numberChosen){
+      passwordArray[j] = specialCharacterArray[Math.floor(Math.random() *10)];
+    }
+
     if (uppercaseChosen){
       passwordArray[2] = uppercaseArray[Math.floor(Math.random() *26)];
     }
@@ -154,6 +167,7 @@ function generatePassword(){
     if (specialCharacterChosen){
       passwordArray[6] = specialCharacterArray[Math.floor(Math.random() *10)];
     }
+
   }
   console.log(passwordArray);
 
