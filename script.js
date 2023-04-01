@@ -113,7 +113,8 @@ function generatePassword(){
 
   shuffleArray(passwordArray);
   console.log("shuffled password: " +passwordArray); 
-
+  
+  //info about the join() method: https://herewecode.io/blog/array-to-string-without-commas-javascript/#:~:text=In%20JavaScript%2C%20all%20arrays%20have,all%20the%20array%20elements%20concatenated.
   var finalPassword = passwordArray.join("");
   console.log(finalPassword);
 
