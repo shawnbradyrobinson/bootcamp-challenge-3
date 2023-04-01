@@ -97,6 +97,23 @@ function generatePassword(){
   var numberChosen = true; 
   var specialCharacterChosen = true; 
 
+  var passwordLength = prompt("How many characters do you want your password to be?", "8-128 characters. Please enter only numbers.");
+  console.log(passwordLength);
+  Number(passwordLength);
+
+  if (passwordLength < 8){
+    return "Password is too short. Please reload and try again."
+  }
+
+  if (passwordLength > 128){
+    return "Password is too long. Please reload and try again."
+  }
+
+  
+
+
+
+
 
 
 }
