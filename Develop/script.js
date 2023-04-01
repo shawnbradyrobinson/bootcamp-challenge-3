@@ -1,4 +1,79 @@
 // Assignment Code
+/* 
+function generatePassword(){
+  Alphabet Array (Can set it as uppercase and lowercase later)
+  Numbers Array (Random Number generator?)
+  Special Characters Array 
+  lowerCaseChosen boolean
+  upperCaseChosen boolean
+  numberChosen boolean 
+  specialCharacterChosen boolean
+  
+  prompt user for password length 
+
+  if (passwordLength < 8){
+    return "Please  try again with a longer password."
+  }
+
+  if (passwordLength > 128){
+    return "Please try again with a shorter password."
+  }
+
+  prompt user for conditions:
+  Do you want lowercase characters?
+  if yes, lowercaseChosen = TRUE; if no, lowercaseChosen = FALSE; 
+  Do you want uppercase characters?
+  Do you want numbers in your password?
+  Do you want special characters in your password?
+
+
+  for()
+
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Indexed_collections
+  ^^^ that article talks about how to make an empty array of a certain length ^^^
+  VVV                                                                         VVV
+  var passwordArray = Array(passwordLength);
+
+  for (i = 0; i < passwordLength; i++){
+    ----FILL IN ALL OF THE CONDITIONS AND ACTUALLY BUILD OUT THE PASSWORD ARRAY-----
+    if (lowercaseChosen === TRUE){
+      passwordArray[i] = lowercaseArray(i*3 OR randomNumberVariable);
+    }
+    if (uppercaseChosen === TRUE){
+      passwordArray[i+1] = uppercaseArray(i+1 OR secondRandomNumberVariable);
+    }
+
+    if (numberChosen === TRUE){
+      passwordArray[i+2] = numberArray(...);
+    }
+
+    if (specialCharacterChosen === TRUE){
+      passwordArray[i+3] = specialCharacterArray(...);
+    }
+
+
+  }
+  
+  after passwordArray is fully filled out, then scramble it up somehow. 
+  This link has an interesting shuffle based on the Fisher-Yates Shuffle:
+  https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
+
+  Next, I need to turn my array into one string 
+
+
+  This link provides how to turn an array into a string with no separating commas: 
+  https://herewecode.io/blog/array-to-string-without-commas-javascript/#:~:text=In%20JavaScript%2C%20all%20arrays%20have,all%20the%20array%20elements%20concatenated.
+  .join("");
+
+  print the string to the screen.
+
+  ////Eh....backup idea if the for loop is a total bust 
+  create a new array out of exisiting arrays with that one command from the activities...
+  New array = lowercaseArray(0) + specialCharactersArray(0) + whatever else was selected...
+
+}
+
+*/
 var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
