@@ -4,6 +4,7 @@ function generatePassword(){
   Alphabet Array (Can set it as uppercase and lowercase later)
   Numbers Array (Random Number generator?)
   Special Characters Array 
+  ----DONE----
   lowerCaseChosen boolean
   upperCaseChosen boolean
   numberChosen boolean 
@@ -74,6 +75,31 @@ function generatePassword(){
 }
 
 */
+
+function generatePassword(){
+  var lowercaseArray = ["a","b","c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q",
+  "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+  var uppercaseArray = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S",
+  "T", "U", "V", "W", "X", "Y", "Z"]; 
+  var numberArray = Array(129); 
+  for (i = 0; i < 129; i++){
+    numberArray[i] = i; 
+  }
+  var specialCharacterArray = ["!","@","#", "$", "%","^", "&", "*", "(", ")"];
+
+  console.log(numberArray); 
+  console.log(lowercaseArray);
+  console.log(uppercaseArray); 
+  console.log(specialCharacterArray);
+
+  var lowercaseChosen = true; 
+  var uppercaseChosen = true;
+  var numberChosen = true; 
+  var specialCharacterChosen = true; 
+
+
+
+}
 var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
