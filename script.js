@@ -109,7 +109,16 @@ function generatePassword(){
     return "Password is too long. Please reload and try again."
   }
 
-  
+  //info about using confirm() from: https://sabe.io/blog/javascript-yes-no-confirmation-box#:~:text=The%20best%20way%20to%20create,Ok%20and%20a%20Cancel%20button.
+
+  lowercaseChosen = confirm("Do you want lowercase characters in your password? Press OK for 'Yes' and CANCEL for 'No'");
+  console.log("lowercase: ", lowercaseChosen);
+  uppercaseChosen = confirm("Do you want uppercase characters in your password? Press OK for 'Yes' and CANCEL for 'No'");
+  console.log("uppercase: ", uppercaseChosen);
+  numberChosen = confirm("Do you want numerical characters in your password? Press OK for 'Yes' and CANCEL for 'No'");
+  console.log("numbers: ", numberChosen);
+  specialCharacterChosen = confirm("Do you want special characters in your password? Press OK for 'Yes' and CANCEL for 'No'");
+  console.log("special characters: ", specialCharacterChosen);
 
 
 
